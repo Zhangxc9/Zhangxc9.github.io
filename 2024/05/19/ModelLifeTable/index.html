@@ -6,17 +6,17 @@
   <meta name="keywords" content=" model life table ">
   <meta name="description" content="现有模型寿命表概述 | Anfiled08 work blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="概述死亡率的特点： 不论一个人口的死亡率水平如何，死亡率的基本模式保持一致，会随年龄在某一区间发生规律的、可预计的变化。（这也是模型寿命表构建的理论基础）模型寿命表： 从大量经验数据中，将一些参数固定，通过少量可变参数，估计出一整张寿命表。模型寿命表的基本假设： 许多空间、时间与死亡水平不同的实际生命表之间，存在着共同的特点，把这些具有共同特点的生命表按死亡水平从高到低排列起来，就可以代表某一类死">
+<meta name="description" content="1、MortCast包其中包含了kannisto模型，该模型用于估计高龄人口的死亡率，在该包中是基于mx所进行的 2、MortalityLaws包其中Heligman-Pollard模型，该模型为8参数死亡率模型，适用于整个年龄段的死亡率模型。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="现有模型寿命表概述">
-<meta property="og:url" content="http://example.com/2024/05/19/model-life-table/index.html">
+<meta property="og:title" content="死亡率研究中相关R包">
+<meta property="og:url" content="http://example.com/2024/05/22/MortalityRpackage/index.html">
 <meta property="og:site_name" content="Anfiled08 work blog">
-<meta property="og:description" content="概述死亡率的特点： 不论一个人口的死亡率水平如何，死亡率的基本模式保持一致，会随年龄在某一区间发生规律的、可预计的变化。（这也是模型寿命表构建的理论基础）模型寿命表： 从大量经验数据中，将一些参数固定，通过少量可变参数，估计出一整张寿命表。模型寿命表的基本假设： 许多空间、时间与死亡水平不同的实际生命表之间，存在着共同的特点，把这些具有共同特点的生命表按死亡水平从高到低排列起来，就可以代表某一类死">
+<meta property="og:description" content="1、MortCast包其中包含了kannisto模型，该模型用于估计高龄人口的死亡率，在该包中是基于mx所进行的 2、MortalityLaws包其中Heligman-Pollard模型，该模型为8参数死亡率模型，适用于整个年龄段的死亡率模型。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-05-18T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-05-30T00:56:07.502Z">
+<meta property="article:published_time" content="2024-05-22T14:10:10.000Z">
+<meta property="article:modified_time" content="2024-06-06T01:17:44.761Z">
 <meta property="article:author" content="Anfiled08">
-<meta property="article:tag" content="model life table">
+<meta property="article:tag" content="Rpackag">
 <meta name="twitter:card" content="summary">
 
 
@@ -269,7 +269,7 @@
         
         
         <a  class="All R语言 "
-           href="/2024/05/22/MortCast-Rpackage/"
+           href="/2024/05/22/MortalityRpackage/"
            data-tag="Rpackag"
            data-author="" >
             <span class="post-title" title="死亡率研究中相关R包">死亡率研究中相关R包</span>
@@ -278,7 +278,7 @@
         
         
         <a  class="All 科研日志 模型寿命表 "
-           href="/2024/05/19/model-life-table/"
+           href="/2024/05/19/ModelLifeTable/"
            data-tag="model life table"
            data-author="" >
             <span class="post-title" title="现有模型寿命表概述">现有模型寿命表概述</span>
@@ -287,7 +287,7 @@
         
         
         <a  class="All R语言 散点图 "
-           href="/2024/05/18/My-New-Post/"
+           href="/2024/05/18/Rnote/"
            data-tag="R语言"
            data-author="" >
             <span class="post-title" title="R语言学习笔记">R语言学习笔记</span>
@@ -312,7 +312,7 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-model-life-table" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-ModelLifeTable" class="article article-type-post" itemscope itemprop="blogPost">
     
         <h1 class="article-title">现有模型寿命表概述</h1>
     
@@ -341,12 +341,12 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-05-30 08:56:07'>2024-05-19 00:00</time>
+            Created At : <time class="date" title='Updated At: 2024-06-23 20:17:41'>2024-05-19 00:00</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:850</span>
+        <span>Count:873</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -365,7 +365,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E3%80%81%E5%8C%BA%E5%9F%9F%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%88%E7%A6%BB%E6%95%A3%E5%9E%8B%EF%BC%89"><span class="toc-text">第一部分、区域模型寿命表（离散型）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%81%94%E5%90%88%E5%9B%BD%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8"><span class="toc-text">一、联合国模型寿命表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Coale-Demeny%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%881966%E7%AC%AC%E4%B8%80%E7%89%88%EF%BC%8C1983%E5%B9%B4%E6%9B%B4%E6%96%B0%EF%BC%89"><span class="toc-text">二、Coale-Demeny模型寿命表（1966第一版，1983年更新）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%88%E8%92%8B%E6%AD%A3%E5%8D%8E%EF%BC%89"><span class="toc-text">三、中国区域模型寿命表（蒋正华）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E3%80%81%E6%AD%BB%E4%BA%A1%E6%A8%A1%E5%9E%8B%EF%BC%88%E8%BF%9E%E7%BB%AD%E5%9E%8B%EF%BC%89"><span class="toc-text">第二部分、死亡模型（连续型）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81Brass-Logit%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%881971%E5%B9%B4%EF%BC%89"><span class="toc-text">一、Brass-Logit模型寿命表（1971年）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Murray%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882003%E5%B9%B4%EF%BC%89"><span class="toc-text">二、Murray模型寿命表（2003年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B%EF%BC%88%E4%B8%A4%E5%8F%82%E6%95%B0%EF%BC%89"><span class="toc-text">1、该模型简介（两参数）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E5%9C%A8%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%8F%A3%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">2、在中国人口中的应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81clark-sharrow%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882011%E5%B9%B4%EF%BC%89"><span class="toc-text">三、clark-sharrow模型寿命表（2011年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B"><span class="toc-text">1、该模型简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E6%9C%89%E5%AF%B9%E5%BA%94R%E5%8C%85%EF%BC%89"><span class="toc-text">2、该模型的应用（有对应R包）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Wilmoth-%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882012%E5%B9%B4%EF%BC%89"><span class="toc-text">四、Wilmoth 模型寿命表（2012年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B-%E4%B8%A4%E5%8F%82%E6%95%B0%EF%BC%89"><span class="toc-text">1、该模型简介(两参数）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%94%B9%E8%BF%9B"><span class="toc-text">2、该模型的改进</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E6%9D%8E%E5%8D%97%E5%AF%B9ax%EF%BC%88%E5%9B%BA%E5%AE%9A%E5%8F%82%E6%95%B0%EF%BC%89%E8%BF%9B%E8%A1%8C%E4%BA%86%E4%BF%AE%E6%94%B9"><span class="toc-text">2.1 李南对ax（固定参数）进行了修改</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3、该模型的应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81clark%E7%9A%84SVD-comp%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882019%E5%B9%B4%EF%BC%89"><span class="toc-text">五、clark的SVD-comp模型寿命表（2019年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B-1"><span class="toc-text">1、该模型简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E6%9C%89%E5%AF%B9%E5%BA%94R%E5%8C%85%EF%BC%89-1"><span class="toc-text">2、该模型的应用（有对应R包）</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#2024-6-23"><span class="toc-text">2024-6-23</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81Elandt-Johnson-interpolation-method"><span class="toc-text">1、Elandt-Johnson interpolation method</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2024-05-19"><span class="toc-text">2024-05-19</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%E3%80%81%E5%8C%BA%E5%9F%9F%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%88%E7%A6%BB%E6%95%A3%E5%9E%8B%EF%BC%89"><span class="toc-text">第一部分、区域模型寿命表（离散型）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E8%81%94%E5%90%88%E5%9B%BD%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8"><span class="toc-text">一、联合国模型寿命表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Coale-Demeny%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%881966%E7%AC%AC%E4%B8%80%E7%89%88%EF%BC%8C1983%E5%B9%B4%E6%9B%B4%E6%96%B0%EF%BC%89"><span class="toc-text">二、Coale-Demeny模型寿命表（1966第一版，1983年更新）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%B8%AD%E5%9B%BD%E5%8C%BA%E5%9F%9F%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%88%E8%92%8B%E6%AD%A3%E5%8D%8E%EF%BC%89"><span class="toc-text">三、中国区域模型寿命表（蒋正华）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%E3%80%81%E6%AD%BB%E4%BA%A1%E6%A8%A1%E5%9E%8B%EF%BC%88%E8%BF%9E%E7%BB%AD%E5%9E%8B%EF%BC%89"><span class="toc-text">第二部分、死亡模型（连续型）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81Brass-Logit%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%881971%E5%B9%B4%EF%BC%89"><span class="toc-text">一、Brass-Logit模型寿命表（1971年）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Murray%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882003%E5%B9%B4%EF%BC%89"><span class="toc-text">二、Murray模型寿命表（2003年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B%EF%BC%88%E4%B8%A4%E5%8F%82%E6%95%B0%EF%BC%89"><span class="toc-text">1、该模型简介（两参数）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E5%9C%A8%E4%B8%AD%E5%9B%BD%E4%BA%BA%E5%8F%A3%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">2、在中国人口中的应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81clark-sharrow%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882011%E5%B9%B4%EF%BC%89"><span class="toc-text">三、clark-sharrow模型寿命表（2011年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B"><span class="toc-text">1、该模型简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E6%9C%89%E5%AF%B9%E5%BA%94R%E5%8C%85%EF%BC%89"><span class="toc-text">2、该模型的应用（有对应R包）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81Wilmoth-%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882012%E5%B9%B4%EF%BC%89"><span class="toc-text">四、Wilmoth 模型寿命表（2012年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B-%E4%B8%A4%E5%8F%82%E6%95%B0%EF%BC%89"><span class="toc-text">1、该模型简介(两参数）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%94%B9%E8%BF%9B"><span class="toc-text">2、该模型的改进</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#2-1-%E6%9D%8E%E5%8D%97%E5%AF%B9ax%EF%BC%88%E5%9B%BA%E5%AE%9A%E5%8F%82%E6%95%B0%EF%BC%89%E8%BF%9B%E8%A1%8C%E4%BA%86%E4%BF%AE%E6%94%B9"><span class="toc-text">2.1 李南对ax（固定参数）进行了修改</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3、该模型的应用</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81clark%E7%9A%84SVD-comp%E6%A8%A1%E5%9E%8B%E5%AF%BF%E5%91%BD%E8%A1%A8%EF%BC%882019%E5%B9%B4%EF%BC%89"><span class="toc-text">五、clark的SVD-comp模型寿命表（2019年）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%AE%80%E4%BB%8B-1"><span class="toc-text">1、该模型简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E8%AF%A5%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%BA%94%E7%94%A8%EF%BC%88%E6%9C%89%E5%AF%B9%E5%BA%94R%E5%8C%85%EF%BC%89-1"><span class="toc-text">2、该模型的应用（有对应R包）</span></a></li></ol></li></ol></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -381,7 +381,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><strong>死亡率的特点：</strong> 不论一个人口的死亡率水平如何，死亡率的基本模式保持一致，会随年龄在某一区间发生规律的、可预计的变化。（这也是模型寿命表构建的理论基础）<br><strong>模型寿命表：</strong> 从大量经验数据中，将一些参数固定，通过少量可变参数，估计出一整张寿命表。<br><strong>模型寿命表的基本假设：</strong> 许多空间、时间与死亡水平不同的实际生命表之间，存在着共同的特点，把这些具有共同特点的生命表按死亡水平从高到低排列起来，就可以代表某一类死亡模式从高死亡水平向低死亡水平变化的规律。（参考：宋健《人口统计学》）</p>
+        <h1 id="2024-6-23"><a href="#2024-6-23" class="headerlink" title="2024-6-23"></a>2024-6-23</h1><h1 id="1、Elandt-Johnson-interpolation-method"><a href="#1、Elandt-Johnson-interpolation-method" class="headerlink" title="1、Elandt-Johnson interpolation method"></a>1、Elandt-Johnson interpolation method</h1><p>将简略寿命表变为完全寿命表</p>
+<h1 id="2024-05-19"><a href="#2024-05-19" class="headerlink" title="2024-05-19"></a>2024-05-19</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><strong>死亡率的特点：</strong> 不论一个人口的死亡率水平如何，死亡率的基本模式保持一致，会随年龄在某一区间发生规律的、可预计的变化。（这也是模型寿命表构建的理论基础）<br><strong>模型寿命表：</strong> 从大量经验数据中，将一些参数固定，通过少量可变参数，估计出一整张寿命表。<br><strong>模型寿命表的基本假设：</strong> 许多空间、时间与死亡水平不同的实际生命表之间，存在着共同的特点，把这些具有共同特点的生命表按死亡水平从高到低排列起来，就可以代表某一类死亡模式从高死亡水平向低死亡水平变化的规律。（参考：宋健《人口统计学》）</p>
 <h2 id="第一部分、区域模型寿命表（离散型）"><a href="#第一部分、区域模型寿命表（离散型）" class="headerlink" title="第一部分、区域模型寿命表（离散型）"></a>第一部分、区域模型寿命表（离散型）</h2><h3 id="一、联合国模型寿命表"><a href="#一、联合国模型寿命表" class="headerlink" title="一、联合国模型寿命表"></a>一、联合国模型寿命表</h3><p>1955年根据发达国家寿命表数据，编制了第一套模型寿命表</p>
 <p>1982年构建了联合国发展中国家模型寿命表</p>
 <h3 id="二、Coale-Demeny模型寿命表（1966第一版，1983年更新）"><a href="#二、Coale-Demeny模型寿命表（1966第一版，1983年更新）" class="headerlink" title="二、Coale-Demeny模型寿命表（1966第一版，1983年更新）"></a>二、Coale-Demeny模型寿命表（1966第一版，1983年更新）</h3><h3 id="三、中国区域模型寿命表（蒋正华）"><a href="#三、中国区域模型寿命表（蒋正华）" class="headerlink" title="三、中国区域模型寿命表（蒋正华）"></a>三、中国区域模型寿命表（蒋正华）</h3><h2 id="第二部分、死亡模型（连续型）"><a href="#第二部分、死亡模型（连续型）" class="headerlink" title="第二部分、死亡模型（连续型）"></a>第二部分、死亡模型（连续型）</h2><h3 id="一、Brass-Logit模型寿命表（1971年）"><a href="#一、Brass-Logit模型寿命表（1971年）" class="headerlink" title="一、Brass-Logit模型寿命表（1971年）"></a>一、Brass-Logit模型寿命表（1971年）</h3><p>利用了两张寿命表lx之间的关系</p>
