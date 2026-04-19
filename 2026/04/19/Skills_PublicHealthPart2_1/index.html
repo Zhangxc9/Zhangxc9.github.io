@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>死亡率研究中相关R包 | Zhangxc blog</title>
-  <meta name="keywords" content=" Rpackag ">
-  <meta name="description" content="死亡率研究中相关R包 | Zhangxc blog">
+  <title>呼吸道传染病_技能考试 | Zhangxc blog</title>
+  <meta name="keywords" content=" 公卫技能 , 疾病防控基本技能 ">
+  <meta name="description" content="呼吸道传染病_技能考试 | Zhangxc blog">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="2026年考纲继续延用的2023年11月版本， 来源于国家卫健委医政司2026年考纲对医学人文综合有修订，来源于国家医学考试网  形式：口试+操作备考策略： 主要得分区，应拿尽拿。    公卫知识在技能方面考察分为两部分（传染病，流行病；职业卫生，环境卫生、营养卫生）    一、疾病防控基本技能（第2考站）（传染病、流行病学知识）分值35分，时间20分，口试+操作，题量3-4个；根据所提供的案例和">
 <meta property="og:type" content="article">
@@ -498,9 +498,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-MortalityRpackage" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Skills_PublicHealthPart2_1" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">死亡率研究中相关R包</h1>
+        <h1 class="article-title">呼吸道传染病_技能考试</h1>
     
     <div class="article-meta">
         
@@ -510,9 +510,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="R语言">R语言</a> > 
-            
-            <a  data-rel="R语言&lt;---&gt;死亡研究的相关R包">死亡研究的相关R包</a>
+            <a  data-rel="PublicHealth">PublicHealth</a>
             
         </span>
         
@@ -520,19 +518,21 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color3">Rpackag</a>
+            <a class="color5">公卫技能</a>
+            
+            <a class="color4">疾病防控基本技能</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2024-11-05 15:09:13'>2024-05-22 22:10</time>
+            Created At : <time class="date" title='Updated At: 2026-04-19 21:55:01'>2026-04-19 18:25</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:81</span>
+        <span>Count:66</span>
         
         
         
@@ -540,7 +540,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81MortCast%E5%8C%85"><span class="toc-text">1、MortCast包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E3%80%81MortalityLaws%E5%8C%85"><span class="toc-text">2、MortalityLaws包</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3%E3%80%81DDM%E5%8C%85"><span class="toc-text">3、DDM包</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1%E3%80%81%E6%96%B0%E5%9E%8B%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92%E8%82%BA%E7%82%8E%EF%BC%88%E4%B9%99%E7%B1%BB%EF%BC%89"><span class="toc-text">1、新型冠状病毒肺炎（乙类）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2%E3%80%81%E9%BA%BB%E7%96%B9%EF%BC%88%E4%B9%99%E7%B1%BB%EF%BC%89"><span class="toc-text">2、麻疹（乙类）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3%E3%80%81%E8%82%BA%E7%BB%93%E6%A0%B8%EF%BC%88%E4%B9%99%E7%B1%BB%EF%BC%89"><span class="toc-text">3、肺结核（乙类）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4%E3%80%81%E6%B5%81%E6%84%9F%EF%BC%88%E4%B8%99%E7%B1%BB%EF%BC%89"><span class="toc-text">4、流感（丙类）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5%E3%80%81%E6%B0%B4%E7%97%98%EF%BC%88%E4%B9%99%E7%B1%BB%EF%BC%89"><span class="toc-text">5、水痘（乙类）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6%E3%80%81%E6%B5%81%E8%A1%8C%E6%80%A7%E8%84%91%E8%84%8A%E9%AB%93%E8%86%9C%E7%82%8E%EF%BC%88%E6%B5%81%E8%84%91%EF%BC%8C%E4%B9%99%E7%B1%BB%EF%BC%89"><span class="toc-text">6、流行性脑脊髓膜炎（流脑，乙类）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7%E3%80%81%E4%BA%BA%E6%84%9F%E6%9F%93%E9%AB%98%E8%87%B4%E7%97%85%E6%80%A7%E7%A6%BD%E6%B5%81%E6%84%9F%EF%BC%88%E4%BA%BA%E6%84%9F%E6%9F%93%E6%96%B0%E4%BA%9A%E5%9E%8B%E6%B5%81%E6%84%9F%EF%BC%8C%E4%B9%99%E7%B1%BB%EF%BC%89"><span class="toc-text">7、人感染高致病性禽流感（人感染新亚型流感，乙类）</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -556,10 +556,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1、MortCast包"><a href="#1、MortCast包" class="headerlink" title="1、MortCast包"></a>1、MortCast包</h1><p>其中包含了kannisto模型，该模型用于估计高龄人口的死亡率，在该包中是基于mx所进行的</p>
-<h1 id="2、MortalityLaws包"><a href="#2、MortalityLaws包" class="headerlink" title="2、MortalityLaws包"></a>2、MortalityLaws包</h1><p>其中Heligman-Pollard模型，该模型为8参数死亡率模型，适用于整个年龄段的死亡率模型。</p>
-<h1 id="3、DDM包"><a href="#3、DDM包" class="headerlink" title="3、DDM包"></a>3、DDM包</h1><p>其中包含了death distribution methods</p>
-
+        <h1 id="1、新型冠状病毒肺炎（乙类）"><a href="#1、新型冠状病毒肺炎（乙类）" class="headerlink" title="1、新型冠状病毒肺炎（乙类）"></a>1、新型冠状病毒肺炎（乙类）</h1><h1 id="2、麻疹（乙类）"><a href="#2、麻疹（乙类）" class="headerlink" title="2、麻疹（乙类）"></a>2、麻疹（乙类）</h1><h1 id="3、肺结核（乙类）"><a href="#3、肺结核（乙类）" class="headerlink" title="3、肺结核（乙类）"></a>3、肺结核（乙类）</h1><h1 id="4、流感（丙类）"><a href="#4、流感（丙类）" class="headerlink" title="4、流感（丙类）"></a>4、流感（丙类）</h1><h1 id="5、水痘（乙类）"><a href="#5、水痘（乙类）" class="headerlink" title="5、水痘（乙类）"></a>5、水痘（乙类）</h1><h1 id="6、流行性脑脊髓膜炎（流脑，乙类）"><a href="#6、流行性脑脊髓膜炎（流脑，乙类）" class="headerlink" title="6、流行性脑脊髓膜炎（流脑，乙类）"></a>6、流行性脑脊髓膜炎（流脑，乙类）</h1><h1 id="7、人感染高致病性禽流感（人感染新亚型流感，乙类）"><a href="#7、人感染高致病性禽流感（人感染新亚型流感，乙类）" class="headerlink" title="7、人感染高致病性禽流感（人感染新亚型流感，乙类）"></a>7、人感染高致病性禽流感（人感染新亚型流感，乙类）</h1>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。也可以邮件至 771192805@qq.com </span>
     </div>
